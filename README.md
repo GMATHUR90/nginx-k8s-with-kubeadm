@@ -8,6 +8,28 @@ Before proceeding, make sure you have `kubeadm` installed on both the master and
 
 ## Setup Instructions
 
-### Step 1: Deploy NGINX
+### Step 1: Create a Namespace for NGINX
 
-To deploy NGINX, apply the `nginx-deployment.yaml` file on your Kubernetes cluster. This file creates a Deployment with two replicas of an NGINX pod.
+Start by creating a dedicated namespace for the NGINX deployment.
+
+1. Run the following command to create a namespace named `nginx`:
+   ```bash
+   kubectl create namespace nginx
+   ```
+2. Verify that the namespace has been created:
+```bash
+   kubectl get namespaces
+```
+### Step 2: Create an NGINX Pod in the Namespace
+With the namespace created, deploy an NGINX Pod.
+
+**1. Create a file named pod.yml**
+
+**2. Apply the Pod configuration in the nginx namespace:**
+```bash
+kubectl apply -f pod.yml -n nginx
+```
+**3. Verify that the Pod is running in the nginx namespace:**
+```bash
+kubectl get pods -n nginx
+```

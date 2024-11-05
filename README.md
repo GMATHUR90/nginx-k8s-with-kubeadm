@@ -13,9 +13,9 @@ Before proceeding, make sure you have `kubeadm` installed on both the master and
 Start by creating a dedicated namespace for the NGINX deployment.
 
 1. Run the following command to create a namespace named `nginx`:
-   ```bash
+```bash
    kubectl create namespace nginx
-   ```
+```
 2. Verify that the namespace has been created:
 ```bash
    kubectl get namespaces
@@ -23,7 +23,7 @@ Start by creating a dedicated namespace for the NGINX deployment.
 ### Step 2: Create an NGINX Pod in the Namespace
 With the namespace created, deploy an NGINX Pod.
 
-**1. Create a file named pod.yml**
+**1. Create a file named [`pod.yml`](./pod.yml)**
 
 **2. Apply the Pod configuration in the nginx namespace:**
 ```bash

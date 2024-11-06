@@ -23,7 +23,7 @@ Start by creating a dedicated namespace for the NGINX deployment.
 ### Step 2: Create an NGINX Pod in the Namespace
 With the namespace created, deploy an NGINX Pod.
 
-**1. Create a file named [`pod.yml`](https://github.com/GMATHUR90/nginx-k8s-with-kubeadm/blob/main/pod.yaml)**
+**1. Create a file named [`pod.yaml`](https://github.com/GMATHUR90/nginx-k8s-with-kubeadm/blob/main/pod.yaml)**
 
 **2. Apply the Pod configuration in the nginx namespace:**
 ```bash
@@ -36,7 +36,7 @@ kubectl get pods -n nginx
 
 ### Step 3: Create an NGINX Deployment in the Namespace
 
-**1. Create a file named ['deployment.yml'](https://github.com/GMATHUR90/nginx-k8s-with-kubeadm/blob/main/deployment.yaml)**
+**1. Create a file named ['deployment.yaml'](https://github.com/GMATHUR90/nginx-k8s-with-kubeadm/blob/main/deployment.yaml)**
 
 **2. Apply the Deployment configuration in the nginx namespace:**
 ```bash

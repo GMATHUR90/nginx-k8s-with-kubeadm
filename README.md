@@ -48,4 +48,19 @@ kubectl get deployments -n nginx
 kubectl get pods -n nginx
 ```
 
+### Step 4: Expose the NGINX Service in the Namespace
+
+**1. Create a file named ['service.yaml'](https://github.com/GMATHUR90/nginx-k8s-with-kubeadm/blob/main/service.yaml)**
+
+**2. Apply the service configuration in the nginx namespace:**
+```bash
+kubectl apply -f service.yml --namespace nginx
+```
+
+**3. Verify that the service is running and note the assigned NodePort:**
+```bash
+kubectl get services -n nginx
+```
+
+
 

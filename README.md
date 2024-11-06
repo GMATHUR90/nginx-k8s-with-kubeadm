@@ -33,3 +33,19 @@ kubectl apply -f pod.yml -n nginx
 ```bash
 kubectl get pods -n nginx
 ```
+
+### Step 3: Create an NGINX Deployment in the Namespace
+
+**1. Create a file named ['deployment.yml'](https://github.com/GMATHUR90/nginx-k8s-with-kubeadm/blob/main/deployment.yaml)**
+
+**2. Apply the Deployment configuration in the nginx namespace:**
+```bash
+kubectl apply -f deployment.yml --namespace nginx
+```
+**3. Verify that the Deployment and replicas are running:**
+```bash
+kubectl get deployments -n nginx
+kubectl get pods -n nginx
+```
+
+

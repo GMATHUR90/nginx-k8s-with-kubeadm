@@ -77,7 +77,17 @@ List all services in a specific namespace:
 ```bash
 kubectl get service -n <namespace_name>
 ```
+### 12. Delete the pod, deployment, and service (assuming they're all in the same namespace):
+```bash
+kubectl delete pod <pod-name> -n <namespace>
+kubectl delete deployment <deployment-name> -n <namespace>
+kubectl delete service <service-name> -n <namespace>
+```
 
+### 13. Delete the namespace (which will automatically delete all resources within it):
+```bash
+kubectl delete namespace <namespace>
+```
 #### Note: Replace <namespace_name> with the actual namespace name where the resources are managed.
 
 

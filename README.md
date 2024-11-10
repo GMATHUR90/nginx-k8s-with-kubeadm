@@ -62,5 +62,16 @@ kubectl apply -f service.yml --namespace nginx
 kubectl get services -n nginx
 ```
 
+### Step 5: Access the NGINX Application
+After setting up the NodePort service, you can access NGINX using the public IP address of any node in the cluster along with the NodePort assigned to the service.
+
+For example, if the NodePort assigned to the service is 30007 and your worker node’s IP address is X.X.X.X, you can access NGINX by visiting:
+
+![nginx_1.png](images/nginx_1.png)
+
+![nginx_2.png](images/nginx_2.png)
+
+
+
 
 
